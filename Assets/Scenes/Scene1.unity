@@ -1684,6 +1684,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1844479309}
+  - 114: {fileID: 1844479310}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1703,6 +1704,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1844479310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844479308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8419583030840a399fa2974370c17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeEffect: {fileID: 19800000, guid: f84e4331fb8924e338ad57c2dd9e39aa, type: 2}
+  fireEffect: {fileID: 19800000, guid: 80e383e8214d54fdf944c054185c9883, type: 2}
 --- !u!1001 &1867540308
 Prefab:
   m_ObjectHideFlags: 0
