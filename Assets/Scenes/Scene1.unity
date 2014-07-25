@@ -416,7 +416,7 @@ Transform:
   m_Children:
   - {fileID: 534961058}
   m_Father: {fileID: 703907913}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &397481926
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,11 +667,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1365825158}
   - {fileID: 874555292}
   - {fileID: 1474211024}
   - {fileID: 2065226237}
   - {fileID: 396235429}
+  - {fileID: 1365825158}
   m_Father: {fileID: 238828971}
   m_RootOrder: 3
 --- !u!1 &804869825
@@ -753,7 +753,7 @@ Transform:
   - {fileID: 681550469}
   - {fileID: 397481928}
   m_Father: {fileID: 703907913}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!61 &874555293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1263,7 +1263,7 @@ Transform:
   - {fileID: 949518411}
   - {fileID: 380906663}
   m_Father: {fileID: 703907913}
-  m_RootOrder: 0
+  m_RootOrder: 4
 --- !u!114 &1365825159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1472,7 +1472,7 @@ Transform:
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 703907913}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!212 &1474211025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1685,6 +1685,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1844479309}
   - 114: {fileID: 1844479310}
+  - 114: {fileID: 1844479311}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1717,6 +1718,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smokeEffect: {fileID: 19800000, guid: f84e4331fb8924e338ad57c2dd9e39aa, type: 2}
   fireEffect: {fileID: 19800000, guid: 80e383e8214d54fdf944c054185c9883, type: 2}
+--- !u!114 &1844479311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844479308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527269bb92dcb43a8bda07f39f7cce52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSound: {fileID: 8300000, guid: 3c7034c3cac824a3486fc8756ede02f5, type: 3}
+  playerShotSound: {fileID: 8300000, guid: e50f028145814482181fd46749d8d84a, type: 3}
+  enemyShotSound: {fileID: 8300000, guid: d28bd58dfcd2f4716aa437778268277d, type: 3}
+--- !u!1 &1856647905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1856647907}
+  - 82: {fileID: 1856647906}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1856647906
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856647905}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: ea26af45aecf34cc19ab8b563c0fb20b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!4 &1856647907
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856647905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1001 &1867540308
 Prefab:
   m_ObjectHideFlags: 0
@@ -1948,7 +2049,7 @@ Transform:
   m_Children:
   - {fileID: 2127715573}
   m_Father: {fileID: 703907913}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &2082717900
 GameObject:
   m_ObjectHideFlags: 0
