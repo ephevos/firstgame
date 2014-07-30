@@ -100,4 +100,12 @@ public class PlayerScript2 : MonoBehaviour
 			if (playerHealth != null) playerHealth.Damage(1);
 		}
 	}
+
+	void OnDestroy()
+	{
+		// Game Over.
+		// Add the script to the parent because the current game
+		// object is likely going to be destroyed immediately.
+		transform.parent.gameObject.AddComponent<GameOverScript>();
+	}
 }
